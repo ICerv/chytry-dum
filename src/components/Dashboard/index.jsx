@@ -14,7 +14,7 @@ export const Dashboard = ({ data }) => {
     <main className="dashboard">
       <Lights lights={lights} />
       <Climate temperature={temperature} humidity={humidity} />
-      <Blinds />
+      <Blinds state={data.blinds} />
       <Energy electricity={electricity} water={water} />
     </main>
   );
